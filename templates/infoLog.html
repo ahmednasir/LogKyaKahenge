@@ -1,0 +1,52 @@
+
+
+{% extends "layout.html" %}
+{% block body %}
+    <div class="card filter-card">
+        <div class="row filter-card-first-row">
+            <div class="col-md-5">
+                <div class="form-group" style="margin-bottom:0 !important;">
+                    <input type="text" class="form-control" id="search" placeholder="Search">
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="showAll">
+                    <label class="form-check-label" for="showAll">Show All</label>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="row filter-card-first-row filter-card-second-row">
+             <div class="col-md-3">
+                <div class="form-group">
+                  <label for="startTime">Start Time: </label>
+                  <input
+                    type="text"
+                    id="startTime"
+                    required
+                  />
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                  <label for="startTime">End Time: </label>
+                  <input
+                    type="text"
+                    id="endTime"
+                    required
+                  />
+                </div>
+            </div>
+            <div class="col-md-3">
+               
+            </div>
+            <div class="col-md-3">
+                <button class="btn btn-primary search-btn">Search</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="accordion"></div>
+{% endblock %}
